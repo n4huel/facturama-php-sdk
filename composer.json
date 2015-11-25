@@ -1,0 +1,35 @@
+{
+  "name": "facturama/facturama_php_sdk",
+  "type": "library",
+  "license": "LGPL-3.0",
+  "description": "Facturama PHP Library",
+  "version": "1.0",
+  "extra": [
+    {
+      "engine": "PHP SDK"
+    }
+  ],
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Facturama",
+      "homepage": "http://facturama.mx"
+    }
+  ],
+  "require": {
+    "php": ">=5.2.1",
+    "ext-curl": "*",
+    "ext-hash": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.8.*"
+  },
+  "support": {
+    "issues": "https://github.com/Facturama/facturama-php/issues"
+  },
+  "autoload": {
+    "classmap": [
+      "lib/"
+    ]
+  }
+}
