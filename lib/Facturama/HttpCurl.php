@@ -62,7 +62,6 @@ class Facturama_HttpCurl
         curl_setopt($ch, CURLOPT_USERPWD, $userNameAndPassword);
         curl_setopt($ch, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0);
 
-        var_dump($data);
         $response = curl_exec($ch);
   
 

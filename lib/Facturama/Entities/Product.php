@@ -132,7 +132,6 @@ class Facturama_Product extends Facturama
             $data['response'] = $message;
             $data['success'] = true;
         }
-
         $result = self::build($data);
 
         if ($httpStatus == 200 || $httpStatus == 201 || $httpStatus == 422 || 

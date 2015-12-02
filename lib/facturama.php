@@ -19,6 +19,7 @@ include_once('Facturama/Result.php');
 include_once('Facturama/Configuration.php');
 
 include_once('Facturama/Entities/Product.php');
+include_once('Facturama/Entities/Cfdi.php');
 
 require_once('Facturama/Http.php');
 require_once('Facturama/HttpCurl.php');
