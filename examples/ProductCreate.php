@@ -30,7 +30,7 @@ $product['Price'] = 6.0;
     </div>
     <?php try {
         $response = Facturama_Product::create($product);
-        if($response->getStatus() == 'SUCCESS'){
+        if($response->getStatus() == 200){
             echo '<div class="alert alert-success">SUCCESS: '.$status_desc;
             echo '</div>';
         }else{

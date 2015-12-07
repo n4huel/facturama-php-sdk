@@ -94,7 +94,6 @@ class Facturama_Http
                 throw new Facturama_Exception_Authorization($message->getStatus().' - '.$message->getResponse(), $statusCode);
                 break;
 
-
             case 404:
                 throw new Facturama_Exception_Network('Data indicated in the request is not available in the Facturama system.');
                 break;

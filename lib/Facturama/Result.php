@@ -9,12 +9,16 @@
 
 class Facturama_Result
 {
-    private $status = '';
+    private $message = '';
     private $error = '';
+    private $error_list = '';
+
+    private $status = '';
     private $success = 0;
+
     private $request = '';
     private $response = '';
-    private $message = '';
+    
 
     /**
      * @access public
@@ -50,6 +54,24 @@ class Facturama_Result
     public function setError($value)
     {
         $this->error = $value;
+    }
+
+    /**
+     * @access public
+     * @return string
+     */
+    public function getErrors()
+    {
+        return $this->error_list;
+    }
+
+    /**
+     * @access public
+     * @param $value
+     */
+    public function setErrors($value)
+    {
+        $this->error_list = $value;
     }
 
     /**
